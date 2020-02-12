@@ -34,9 +34,9 @@ export class ApiClient {
         /**
          * The base URL against which to resolve every API call's (relative) path.
          * @type {String}
-         * @default https://virtserver.swaggerhub.com/Cataldo71/DomainGraphModel/1.0.0
+         * @default 'https://10.50.88.127/DomainGraphModel/1.0.0'
          */
-        this.basePath = 'https://virtserver.swaggerhub.com/Cataldo71/DomainGraphModel/1.0.0'.replace(/\/+$/, '');
+        this.basePath = 'https://10.50.88.127/DomainGraphModel/1.0.0'.replace(/\/+$/, '');
 
         /**
          * The authentication methods to be included for all API calls.
@@ -357,7 +357,7 @@ export class ApiClient {
         return ApiClient.convertToType(data, returnType);
     }
 
-    
+
 
     /**
     * Invokes the REST service using the supplied settings and parameters.
@@ -471,7 +471,7 @@ export class ApiClient {
             });
         });
 
-        
+
     }
 
     /**
